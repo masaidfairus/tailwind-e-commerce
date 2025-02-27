@@ -757,6 +757,14 @@ select{
   outline: 1px auto -webkit-focus-ring-color;
 }
 
+body {
+  font-family: 'Poppins', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+}
+
 .container{
   width: 100%;
   margin-right: auto;
@@ -787,6 +795,21 @@ select{
   .container{
     max-width: 1200px;
   }
+}
+
+.size-components input:checked + label {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 61, 87, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.color-components input:checked + label {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(253, 61, 87, var(--tw-ring-opacity));
 }
 
 .sr-only{
